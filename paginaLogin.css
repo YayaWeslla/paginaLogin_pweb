@@ -24,7 +24,7 @@ form{
 
 body{
     font-family:'Winky Rough', sans-serif;
-    background-image: url(fundo.jpg);
+    background-image: url(fundo1.jpg);
     color: #123553;
 }
 
@@ -64,8 +64,7 @@ select{
     height: 100vh;
 }
 
-.button-container{
-    
+.button{    
     cursor: pointer;
     outline: 0;
     display: inline-block;
@@ -80,10 +79,16 @@ select{
     transition: color .15s ease-in-out, background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     color: #204377;
     border-color: #204377;
-    :hover {
-        color: #fff;
-        background-color: #204377;
-        border-color: #204377;
-    }
+    
 }
 
+.button:hover {    
+    color: #fff;
+    background-color: #204377;
+    border-color: #204377;    
+}
+
+.botao-container {
+    display: flex;
+    justify-content: space-between;
+}
